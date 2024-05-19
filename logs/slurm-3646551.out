@@ -1,0 +1,42 @@
+Program starts:  16:35:36
+/var/spool/slurm/job3646551/slurm_script: line 15: conda_initialize: command not found
+Running with n=3
+/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/micromamba/envs/is809/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.54s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.70s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.85s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.67s/it]
+/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/micromamba/envs/is809/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/is809/codes/src/utils/preprocess.py:27: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  selected_rows = pd.concat([selected_rows, semifinal])
+/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/micromamba/envs/is809/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/ma/ma_ma/ma_kyupark/.cache/huggingface/token
+Login successful
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.10s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.75s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.35s/it]
+  0%|          | 0/5 [00:00<?, ?it/s]/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/micromamba/envs/is809/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+ 20%|██        | 1/5 [00:05<00:21,  5.30s/it]/gpfs/bwfor/home/ma/ma_ma/ma_kyupark/micromamba/envs/is809/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+ 40%|████      | 2/5 [00:06<00:08,  2.77s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+ 60%|██████    | 3/5 [00:07<00:03,  1.95s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+ 80%|████████  | 4/5 [00:08<00:01,  1.58s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+100%|██████████| 5/5 [00:09<00:00,  1.49s/it]100%|██████████| 5/5 [00:09<00:00,  1.92s/it]
+Performance assessed successfully.
+      Metric  Value
+0   Accuracy    1.0
+1  Precision    1.0
+2     Recall    1.0
+3   F1-score    1.0
+Completed run with n=3
+Completed: 16:36:48
