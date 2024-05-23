@@ -25,7 +25,9 @@ def fewshot_tempfoc(model, tokenizer, sentence, examples):
 
     
     messages = [
-        {"role": "system", "content": "You are a chatbot deciphering the temporal focus of a given sentence. You can answer in one of the three words: past, present or future. Here are some examples:" + examples},
+        {"role": "system", "content": "You are a chatbot deciphering the temporal\
+          focus of a given sentence. You can answer in one of the three words: \
+         past, present or future. Here are some examples:" + examples},
         {"role": "user", "content": "What is the temporal focus of:" + sentence}
     ]
     

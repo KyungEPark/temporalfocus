@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --ntasks=1
-#SBATCH --time=04:00:00
+#SBATCH --time=08:00:00
 #SBATCH --mem=64000
 #SBATCH --gres=gpu:2
 #SBATCH --job-name=cotfewshot
@@ -17,7 +17,7 @@ micromamba activate is809
 
 cd /home/ma/ma_ma/ma_kyupark/is809
 
-n_values=(2)
+n_values=(20)
 
 for n in "${n_values[@]}"
 do

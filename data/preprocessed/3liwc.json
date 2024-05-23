@@ -1,1 +1,13 @@
-["The text: 'The picture shown on the bottom left here is of a Jasmine topside installation that began in March and was completed earlier this month.' has a temporal focus of Past ", "The text: 'And it's our confidence in that you can see it's exhibited by the additional share repurchase authorization that's in today's announcement.' has a temporal focus of Present ", "The text: 'Productivity will become systemic, not episodic, we will continuously improve our effectiveness and efficiency, we will measure productivity, we will recognize it, and we will reward it.' has a temporal focus of Future "]
+["The text: 'The picture shown on the bottom left here is of \
+a Jasmine topside installation that began in March and was \
+completed earlier this month.' talks about a installation \
+that has started and ended in the past and thus has a \
+temporal focus of Past ",\
+ "The text: 'And it's our confidence in that you can see it's \
+ exhibited by the additional share repurchase authorization that's\
+  in today's announcement.' is talking about today's 
+  and thus has a temporal focus of Present ", \
+  "The text: 'Productivity will become systemic, not episodic, \
+  we will continuously improve our effectiveness and efficiency,\
+   we will measure productivity, we will recognize it, and we \
+   will reward it.' has a temporal focus of Future "]

@@ -25,7 +25,10 @@ def fewshot_reastempfoc(model, tokenizer, sentence, examples):
 
     
     messages = [
-        {"role": "system", "content": "You are a chatbot deciphering the temporal focus of a given sentence. Please provide the reason and label in the format of: 'Reason: (Your reason), Answer: (Your answer in one of three words: Past, Present, Future).' Here are some examples:" + examples},
+        {"role": "system", "content": "You are a chatbot deciphering the temporal focus\
+          of a given sentence. Please provide the reason and label in the format of: \
+         'Reason: (Your reason), Answer: (Your answer in one of three words: Past,\
+          Present, Future).' Here are some examples:" + examples},
         {"role": "user", "content": "What is the temporal focus of:" + sentence}
     ]
     

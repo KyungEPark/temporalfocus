@@ -17,7 +17,7 @@ micromamba activate is809
 
 cd /home/ma/ma_ma/ma_kyupark/is809
 
-n_values=(2 4)
+n_values=(1)
 
 for n in "${n_values[@]}"
 do
