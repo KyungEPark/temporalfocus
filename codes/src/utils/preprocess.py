@@ -28,10 +28,27 @@ def liwctopn(filename, n):
     
     return selected_rows
 
+def randomselectn(filename, n):
+    import pandas as pd
+    
+    # Read the CSV file into a DataFrame
+    df = pd.read_pickle(filename)
+    
+    # Select n random rows from the DataFrame
+    random_rows = df.sample(n=n)
+    
+    return random_rows
 
 def preprocess(df):
     texts = []
     for index, line in df.iterrows():
         text = f"The text: '{line['Text']}' has a temporal focus of {line['Label']} "
+        texts.append(text)
+    return texts
+
+def cotpreprocess(df):
+    texts = []
+    for index, line in df.iterrows():
+        text = f"The text: '{line['Text']}', because of the reason: '{line['Reason']}', has a temporal focus of {line['Label']} "
         texts.append(text)
     return texts

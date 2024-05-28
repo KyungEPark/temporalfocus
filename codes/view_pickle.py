@@ -2,9 +2,13 @@ import pandas as pd
 import pickle
 
 # Path to your pickle file
-file_name = 'few1labeled.pkl'
+file_name = 'cot3perf.pkl'
 pickle_file_path = 'data/output/validation/'+file_name
 
+'''
+file_name = 'reasonedanno.pkl'
+pickle_file_path = 'data/rawdata/'+file_name
+'''
 # Load the pickle file
 with open(pickle_file_path, 'rb') as file:
     data = pickle.load(file)
@@ -16,3 +20,11 @@ if isinstance(data, pd.DataFrame):
     print(data.to_string())
 else:
     print("The loaded data is not a DataFrame.")
+
+'''
+from src.utils.preprocess import randomselectn, cotpreprocess
+ncotex = randomselectn(pickle_file_path, 1)
+cotex = cotpreprocess(ncotex)
+print(ncotex)
+print(cotex)
+'''
