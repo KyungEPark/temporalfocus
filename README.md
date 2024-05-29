@@ -1,1 +1,3 @@
-Before script running, be sure to use: sed -i 's/\r$//' codes/scripts/run_zeroshot.sh
+The code is used to compare the performance of LIWC with LLAMA 3. 
+
+I try comparing the performance of LIWC with zeroshot / fewshot / and CoT fewshot prompting.
