@@ -39,6 +39,19 @@ def randomselectn(filename, n):
     
     return random_rows
 
+def oneexample(filename, n):
+    import pandas as pd
+    
+    # Read the CSV file into a DataFrame
+    df = pd.read_pickle(filename)
+    
+    # Select n random rows from the DataFrame
+    row = df.iloc[n]
+    row = pd.DataFrame([row])
+    
+    return row
+
+
 def preprocess(df):
     texts = []
     for index, line in df.iterrows():

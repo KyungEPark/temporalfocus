@@ -4,6 +4,12 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 
 def performance(df):
+
+    df['Prediction'] = df['Prediction'].replace({None: pd.NA})
+
+    # Drop the NaNs
+    df = df.dropna(subset=['Prediction'])
+
     # Calculate accuracy
     accuracy = accuracy_score(df['Label'], df['Prediction'])
 
